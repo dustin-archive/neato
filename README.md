@@ -5,7 +5,7 @@ A tiny library to store and get data quickly.
 
 ### [Perceived performance increase](https://en.wikipedia.org/wiki/Perceived_performance)
 
-The main benefit to using neato is that you can increase perceived performance in your app. Neato organizes and removes duplicate keys and values beforehand instead of after an action is triggered. Using `neato.merge` when fetching chunks of data combined with using `neato.values` or `neato.keys` to use that data will increase perceived performance. So while total computation time it may be longer, getting data from neato arrays is almost instant.
+The main benefit to using neato is that you can increase perceived performance in your app. Neato organizes and removes duplicate keys and values beforehand instead of after an action is triggered. Using `neato.merge` when fetching chunks of data combined with using `neato.values` or `neato.keys` to use that data will increase perceived performance. So while total computation time may be longer, getting data from neato arrays is almost instant.
 
 ### Smaller data transfers
 
