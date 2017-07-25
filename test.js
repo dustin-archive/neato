@@ -1,7 +1,7 @@
 const test = require('tape')
 const neato = require('./')
 
-const neatoData = [
+const encoded = [
   [
     'category',
     'make',
@@ -20,7 +20,7 @@ const neatoData = [
   ]
 ]
 
-const neatoOutput = [
+const decoded = [
   {
     category: 'aaa',
     make: 'eee',
@@ -46,5 +46,6 @@ const neatoOutput = [
 
 test('neato', function (t) {
   t.plan(1)
-  t.same(neato(neatoData), neatoOutput, 'neato')
+  t.same(neato.decode(encoded), decoded, 'decode')
+  t.same(neato.encode(decoded), encoded, 'encode')
 })
