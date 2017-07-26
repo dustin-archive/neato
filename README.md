@@ -62,3 +62,7 @@ Get an array of all keys from a neato array.
 ### `neato.values(data, key)`
 
 Get an array of all values for a key in a neato array.
+
+### `neato.get(data, key)`
+
+Get a value for a key in a neato array.
