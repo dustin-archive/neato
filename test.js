@@ -42,5 +42,4 @@ test('neato', function (t) {
   t.plan(2)
   t.same(neato.decode(encoded), decoded, 'decode')
   t.same(neato.encode(decoded), encoded, 'encode')
-  // t.same(neato.get(1, 'make', encoded), 'f', 'encode')
 })

@@ -1,4 +1,4 @@
-module.exports = function decode(data) {
+module.exports = function decode (data) {
   var keys = data[0]
   var values = data[1]
   var model = data[2]

@@ -1,4 +1,4 @@
-module.exports = function encode(items) {
+module.exports = function encode (items) {
   var length = items.length
   var keys = []
   var values = []
