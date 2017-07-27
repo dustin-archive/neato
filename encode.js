@@ -4,6 +4,7 @@ module.exports = function encode(items) {
   var values = []
   var model = new Array(length)
   for (var i = 0; i < length; i++) {
+    model[i] = []
     for (var key in items[i]) {
       var value = items[i][key]
       var k = keys.indexOf(key)
