@@ -1,21 +1,10 @@
 const test = require('tape')
-const neato = require('./')
+const { decode, encode } = require('./')
 
 const encoded = [
-  [
-    'foo',
-    'bar',
-    'baz'
-  ], [
-    ['a', 'b', 'c', 'd'],
-    ['e', 'f', 'g', 'h'],
-    ['i', 'j', 'k', 'l']
-  ], [
-    [0, 0, 0],
-    [1, 1, 1],
-    [2, 2, 2],
-    [3, 3, 3]
-  ]
+  ['foo', 'bar', 'baz'],
+  ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'],
+  [[0, 0], [1, 1], [2, 2], [3, 3]]
 ]
 
 const decoded = [
@@ -38,8 +27,8 @@ const decoded = [
   }
 ]
 
-test('neato', function (t) {
-  t.plan(2)
-  t.same(neato.decode(encoded), decoded, 'decode')
-  t.same(neato.encode(decoded), encoded, 'encode')
+test('neato', ({ plan, same }) => {
+  plan(2)
+  same(decode(encoded), decoded, 'decode')
+  same(encode(decoded), encoded, 'encode')
 })
